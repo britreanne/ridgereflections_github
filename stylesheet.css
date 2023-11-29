@@ -1,0 +1,457 @@
+@charset "UtF-e";
+
+/*---GENERAL STYLE---*/
+body{
+    font-family: "Sofia", sans-serif; 
+    color: #8bc0cc;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    color: #8bc0cc;
+    font-size: 62px;
+}
+.text-box p{
+    margin: 20px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hero-btn:hover{
+    border: 1px solid #8bc0cc;
+    background: #8bc0cc;
+}
+
+
+/*------HERO IMAGE------*/
+.hero_image{
+    background-image: linear-gradient(rgba(45, 44, 44, 0.4),rgba(45, 44, 44, 0.4)),url(Images/wedding-pixabay.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+                    
+}
+
+
+
+
+/*-----IMAGES------*/
+img{
+    max-width: 100%;
+}
+
+img[src*="Britni2 copy 2"] {
+    float: inline-start;
+  }
+
+
+
+/*----Buttons----*/
+
+.button{
+    background-color: #8bc0cc;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    margin: 6px 3px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*----ABOUT SOCIAL------*/
+.aboutsocial{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    margin: 30px;
+}
+.aboutsocial h4{
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Social Media Links*/
+
+.social a{
+    font-size: 30px;
+    color: #8bc0cc;
+    border-style: groove;
+    border-color: grey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+ /* Social Media Links on mouse hover */
+.social a:hover {
+    background-color: black;
+    color: #8bc0cc;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  } 
+
+.social {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+
+/*------FOOTER------*/
+.footer{
+    background-color: #8bc0cc;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    padding: 10px;
+    
+}
+
+footer p{
+    color: white;
+}
+
+h1 {
+    font: bold 2em Times, serif;
+    color: black;
+    text-shadow: .05em .05em .1em gray;
+}
+h2 {
+    font: bold 1.2em Times, serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+/*---NAV STYLE---*/
+.main_nav {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    background-color: #8bc0cc;
+    padding: 1.5em;
+    margin: 0;
+}
+.main_nav a{
+    color: azure;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+.main_nav a:hover{
+    background-color: azure;
+    color: #8bc0cc;
+}
+
+/*---- GRID - INDEX PAGE ----*/
+#index{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    'welcome     welcome     welcome'
+    'tile1       tile2       tile3'
+    'about       about       about'
+    'r1          r1          r1'
+    ;
+
+}
+
+/*------GRID ITEMS-------*/
+.item1{
+    grid-area: welcome;
+    background-color: #ededed;
+    font-size: 35px;
+    text-align: center;
+}
+.item2{
+    grid-area: tile1;
+    font-size: 20px;
+    text-align: center;
+}
+.item3{
+    grid-area: tile2;
+    font-size: 20px;
+    text-align: center;
+}
+.item4{
+    grid-area: tile3;
+    font-size: 20px;
+    text-align: center;
+}
+.item5{
+    grid-area: about;
+    background-color: #ededed;
+    font-size: 20px;
+    text-align: left;
+}
+.item6{
+    grid-area: r1;
+    background-color: #ededed;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*-----GRID STYLE------*/
+
+.item1, .item6{
+    margin: 0px 50px 0px 50px;
+    padding: 60px 0px 60px 0px;
+}
+
+.item2, .item3, .item4{
+    margin: 40px;
+}
+
+.item5{
+    margin: 40px;
+}
+
+
+
+/*------ABOUT US PAGE ------*/
+
+#about{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'about1 about1 about1'
+    'about2 about2 about2'
+    'about3 about3 about3'
+    ;
+
+}
+
+.about1{
+    grid-area: about1;
+    object-fit: cover;
+}
+
+.about2{
+    grid-area: about2;
+    object-fit: cover;
+}
+
+.about3{
+    grid-area: about3;
+    object-fit: cover;
+}
+
+/*-----GRID STYLE------*/
+
+.about1, .about2, .about3{
+    margin: 0px 50px;
+    padding-top: 60px;
+}
+
+
+
+
+
+/*--GALLERY PAGE---*/
+
+.gallery-header{
+    margin: 30px;
+}
+
+.Grid{
+    display: Grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.gallery{
+    max-width: 100%;
+}
+
+.gallery{
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+.gallery:hover{
+    transform: scale(1.10);
+}
+
+/*
+p{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+*/
+
+/*-----SERVICES PAGE------*/
+
+.services {
+    margin: 50px;
+}
+
+.Services{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'Mini     Hourly    Events'
+    ;
+
+}
+
+/*------GRID ITEMS-------*/
+.Mini{
+    grid-area: Mini;
+    font-size: 30px;
+    text-align: center;
+}
+.Hourly{
+    grid-area: Hourly;
+    font-size: 30px;
+    text-align: center;
+}
+.Events{
+    grid-area: Events;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*------CONTACT PAGE-------*/
+.contact{
+    margin: 100px;
+}
+
+/*------- Media query------*/
+/*
+@media screen and ( max-width: 800px){
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: 
+        ''
+        ''
+        ''
+        ''
+        ''
+        ''
+        ''
+        ;
+
+        justify-items: center;
+        background-color: white;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+*/
+
+@media screen and ( max-width: 588px){
+    #index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        'item1'
+        'item2'
+        'item3'
+        'item4'
+        'item5'
+        'item6'   
+        ;
+        justify-items: center;
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        max-width: 1135px;
+    }
+}
+
+@media screen and ( max-width: 588px){
+    #services{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        'Mini'
+        'Hourly'
+        'Events'
+        ;
+        justify-items: center;
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        max-width: 1135px;
+    }
+}
+
+@media screen and ( max-width: 588px){
+    #contact{
+        justify-items: center;
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        max-width: 1135px;
+    }
+}
+
+@media screen and ( max-width: 588px){
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        'about1'
+        'about2'
+        ''
+        ;
+        justify-items: center;
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        max-width: 1135px;
+    }
+}
+
+
+
+
+
